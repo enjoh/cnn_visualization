@@ -1,4 +1,5 @@
 Implementation of the back-projection of activations published in [1].
+
 Example:
 ![ExampleOutput](out.png)
 
