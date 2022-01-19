@@ -16,7 +16,9 @@ def visualize_results(img_in: torch.Tensor, img_out: torch.Tensor, layer_idx: in
     ax[0].set_title("Input")
 
     ax[1].imshow(img_out)
-    ax[1].set_title(f"Strongest activation in layer {layer_idx}")
+    ax[1].set_title(f"Backprojection of strongest\n activation in layer {layer_idx}")
+    plt.tight_layout()
+    # plt.savefig("out.png", dpi=300)
     plt.show()
 
 
